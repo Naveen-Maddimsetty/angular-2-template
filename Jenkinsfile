@@ -4,7 +4,7 @@ pipeline {
         stage("Install Dependencies") {
             steps {
                 sh "sudo npm install -g @angular/cli"
-                sh "sudo npm install"
+                sh "sudo npm install --force"
             }
         }
 
